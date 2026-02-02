@@ -1,0 +1,15 @@
+# Netlify 배포: 도메인 루트(https://youtubedislikesearch.netlify.app/)에 서빙하므로 base는 /
+# REPO_NAME을 비워 두어 vite가 base: '/' 로 빌드하도록 함
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+  # Netlify는 루트 도메인이므로 REPO_NAME을 설정하지 않음 → vite base: '/' 로 빌드됨
+
+# SPA: 모든 경로를 index.html로 보내 클라이언트 라우팅 지원
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
