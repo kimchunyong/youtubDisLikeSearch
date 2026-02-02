@@ -1,0 +1,88 @@
+.video-list {
+  margin-top: 40px;
+}
+
+.video-list h2 {
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.video-list-content {
+  display: grid;
+  gap: 20px;
+}
+
+.video-item {
+  display: flex;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.video-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+  width: 200px;
+  height: 112px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.video-channel {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.video-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-item .label {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.stat-item .value {
+  font-weight: 600;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .video-item {
+    flex-direction: column;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

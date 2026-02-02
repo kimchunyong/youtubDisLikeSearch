@@ -1,0 +1,21 @@
+.charts {
+  margin-top: 40px;
+}
+
+.chart-container {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+  margin-bottom: 20px;
+  color: #667eea;
+  font-size: 1.5em;
+}
+
+.chart-container canvas {
+  max-height: 400px;
+}
