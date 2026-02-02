@@ -1,3 +1,4 @@
+# GitHub Pages 배포 전에 저장소 Settings → Pages → Source 를 "GitHub Actions" 로 설정해야 합니다.
 name: Deploy React App to GitHub Pages
 
 on:
@@ -37,6 +38,8 @@ jobs:
         env:
           REPO_NAME: youtubDisLikeSearch
           VITE_YOUTUBE_API_KEY: ${{ secrets.VITE_YOUTUBE_API_KEY || '' }}
+          VITE_ADSENSE_CLIENT: ${{ secrets.VITE_ADSENSE_CLIENT || '' }}
+          VITE_ADSENSE_SLOT: ${{ secrets.VITE_ADSENSE_SLOT || '' }}
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -124,9 +124,10 @@ npm run build
    - origin 이 없다면 → `git remote add origin https://github.com/kimchunyong/youtubDisLikeSearch.git` 사용 (set-url 대신 add).  
    - 이미 origin 이 있고 URL 만 바꾸려면 → `git remote set-url origin https://github.com/kimchunyong/youtubDisLikeSearch.git` 후 `git push -u origin main`.
 
-2. **GitHub Pages 설정**
+2. **GitHub Pages 설정 (필수)**  
    - 저장소 **Settings** → **Pages**
-   - **Build and deployment** → **Source**: **GitHub Actions** 선택
+   - **Build and deployment** → **Source**: **GitHub Actions** 선택  
+   - 이 단계를 하지 않으면 Actions에서 "Get Pages site failed" / "HttpError: Not Found" 가 발생합니다.
 
 3. **자동 배포**
    - `main` 브랜치에 푸시할 때마다 `.github/workflows/deploy-react.yml`이 빌드 후 GitHub Pages에 배포

@@ -6,6 +6,7 @@ import Summary from './components/Summary';
 import Charts from './components/Charts';
 import VideoList from './components/VideoList';
 import Footer from './components/Footer';
+import AdSense from './components/AdSense';
 import { searchYouTubeVideos, getMultipleVideoRatings } from './services/api';
 import './App.css';
 
@@ -81,6 +82,8 @@ function App() {
         </header>
 
         <SearchSection onSearch={handleSearch} />
+
+        <AdSense />
 
         {loading && <Loading text={loadingText} />}
         {error && <ErrorMessage message={error} onClose={() => setError(null)} />}
