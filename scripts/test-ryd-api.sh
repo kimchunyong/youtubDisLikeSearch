@@ -2,7 +2,7 @@
 # Return YouTube Dislike API curl 테스트
 # 사용법: ./scripts/test-ryd-api.sh
 
-BASE="https://returnyoutubedislike.com/api"
+BASE="https://returnyoutubedislike.com"
 
 echo "=== 1. /votes?videoId=LYp3BVLVTNs (요청하신 영상) ==="
 curl -s -w "\nHTTP_CODE: %{http_code}\n" "${BASE}/votes?videoId=LYp3BVLVTNs"

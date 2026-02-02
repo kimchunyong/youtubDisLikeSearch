@@ -4,7 +4,7 @@ const YOUTUBE_API_BASE = 'https://www.googleapis.com/youtube/v3';
 const DISLIKE_API_BASE = import.meta.env.DEV
   ? 'https://returnyoutubedislikeapi.com'
   : 'https://returnyoutubedislikeapi.com';
-const DISLIKE_API_PATH = import.meta.env.DEV ? '/votes' : '/api/votes';
+const DISLIKE_API_PATH = import.meta.env.DEV ? '/votes' : '/votes';
 
 // 환경 변수에서 API 키 가져오기
 const getApiKey = () => {
